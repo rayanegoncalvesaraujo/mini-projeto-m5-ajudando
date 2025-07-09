@@ -25,4 +25,4 @@ Uma landing page informativa e responsiva que apresenta dados sociais sobre vuln
   - `/alfabetizacao`
 - ✅ Layout organizado com seções e ícones temáticos
 - ✅ Imagens ilustrativas e tipografia personalizada
-- ✅ Estrutura modular com componentes reutilizáveis
+- ✅ Estrutura modular com componentes reutilizáveist
