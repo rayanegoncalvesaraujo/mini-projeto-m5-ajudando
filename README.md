@@ -18,7 +18,6 @@ Uma landing page informativa e responsiva que apresenta dados sociais sobre vuln
 
 ## 🔗 Funcionalidades
 
-- ✅ Interface moderna, responsiva e acessível
 - ✅ Consumo de 3 rotas da API:
   - `/vulnerabilidade`
   - `/fome`
