@@ -1,19 +1,19 @@
-import React from "react";
-import { SectionTitle } from "../components/SectionTitle";
+import { pages } from 'next/dist/build/templates/app-page';
+import React from 'react';
 
-export const VulnerabilidadeSection = () => {
-  return (
-    <section id="vulnerabilidade" className="bg-white py-12">
-      <div className="max-w-6xl mx-auto px-4">
-        <SectionTitle icon="🛡️" title="Vulnerabilidade" />
-        <p className="text-gray-700 mb-6">
-          Youth in vulnerable situations require targeted interventions and support.
-        </p>
-        <div className="bg-gray-100 rounded-xl p-6 shadow-sm">
-          <h4 className="font-bold mb-2">Crescimento de 2017 a 2021</h4>
-          <img src="/grafico-vulnerabilidade.png" alt="Gráfico" className="w-full max-w-md" />
-        </div>
-      </div>
-    </section>
-  );
-};
+// Exemplo de implementação do componente SectionTitle
+const SectionTitle = ({ icon, title }) => (
+  <h2>
+    <span style={{ marginRight: '8px' }}>{icon}</span>
+    {title}
+  </h2>
+);
+
+// Uso do componente com emoji como ícone
+const App = () => (
+  <div>
+    <SectionTitle icon="🔴" title="Vulnerabilidade" />
+  </div>
+);
+
+export default App;

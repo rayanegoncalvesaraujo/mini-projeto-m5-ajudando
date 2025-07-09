@@ -1,10 +1,15 @@
-type Props = {
-  icon: string;
+import React from "react";
+
+type SectionTitleProps = {
   title: string;
+  icon?: string;
 };
 
-export const SectionTitle = ({ icon, title }: Props) => (
-  <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-    <span className="text-3xl">{icon}</span> {title}
-  </h3>
-);
+export const SectionTitle = ({ title, icon }: SectionTitleProps) => {
+  return (
+    <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
+      {icon && <span className="mr-2">{icon}</span>}
+      {title}
+    </h2>
+  );
+};

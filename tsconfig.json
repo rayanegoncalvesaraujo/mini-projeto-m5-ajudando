@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",                            // 👈 necessário para usar "paths"
+    "paths": {
+      "@components/*": ["src/components/*"],   // 👈 alias para componentes
+      "@sections/*": ["src/sections/*"],       // 👈 alias para seções como VulnerabilidadeSection
+      "@utils/*": ["src/utils/*"]              // 👈 (opcional) para utilitários
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
